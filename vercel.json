@@ -9,7 +9,7 @@
     "routes": [
       {
         "src": "/api/auth/.*",
-        "dest": "./routes/authRoutes"
+        "dest": "./routes/auth"
       },
     
       {
