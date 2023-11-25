@@ -1,12 +1,9 @@
+var express = require('express');
+// var userRoutes = require('./userRoutes');
+var authRoutes = require('./auth');
+var appRoutes = express.Router();
 
-
-import express from 'express';
-// import userRoutes from './userRoutes';
-import authRoutes from './auth.route';
-const appRoutes = express.Router();
-// });
-app.use('/auth', authRoutes);
+appRoutes.use('/auth', authRoutes);
 // appRoutes.use('/users', userRoutes);
 
-
-export default appRoutes;
+module.exports = appRoutes;
